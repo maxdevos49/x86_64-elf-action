@@ -1,5 +1,15 @@
-# Set the base image to use for subsequent instructions.
 FROM alpine:3.20
+
+RUN apk update
+RUN apk add binutils-x86_64
+RUN apk add nasm
+RUN apk add make
+RUN apk add xorriso
+RUN apk add mtools
+RUN apk add gptfdisk
+RUN apk add curl
+RUN apk add git
+RUN apk add perl-utils
 
 # Set the working directory inside the container.
 WORKDIR /usr/src
