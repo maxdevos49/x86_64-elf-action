@@ -1,5 +1,5 @@
 #!/bin/sh -l
 
-make all >> "$GITHUB_OUTPUT"
+make all
 
 exit 0

@@ -22,7 +22,7 @@ jobs:
           - 5001:5000
 
     env:
-      TEST_TAG: localhost:5001/actions/container-prebuilt-action:latest
+      TEST_TAG: localhost:5001/actions/x86_64-elf-toolchain:latest
 
     steps:
       - name: Checkout
@@ -47,5 +47,5 @@ jobs:
       - name: Run the Container
         id: run
         run: |
-          docker run  actions/x86_64-elf-toolchain \
+          docker run \
             --rm ${{ env.TEST_TAG }}
