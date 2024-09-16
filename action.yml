@@ -4,4 +4,4 @@ author: maxdevos49
 
 runs:
   using: docker
-  image: docker://ghcr.io/maxdevos49/x86_64-elf-toolchain:v1
+  image: docker://ghcr.io/maxdevos49/x86_64-elf-toolchain:v0.1.0
