@@ -47,5 +47,5 @@ jobs:
       - name: Run the Container
         id: run
         run: |
-          docker run  actions/x86_64-elf-toolchain \
+          docker run actions/x86_64-elf-toolchain:latest \
             --rm ${{ env.TEST_TAG }}
