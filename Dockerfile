@@ -2,7 +2,7 @@ FROM alpine:3.20
 
 RUN apk update
 RUN apk add build-base
-RUN apk add binutils-x86_64
+RUN apk add --force-overwrite binutils-x86_64
 RUN apk add nasm
 RUN apk add make
 RUN apk add xorriso
